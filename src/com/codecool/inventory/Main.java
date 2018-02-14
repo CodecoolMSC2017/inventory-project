@@ -2,7 +2,7 @@ package com.codecool.inventory;
 
 public class Main {
     public static void main(String args[]) {
-        PersistentStore sample = new PersistentStore();
+        PersistentCsvStore sample = new PersistentCsvStore();
         StoreManager manager = new StoreManager();
         manager.addStorage(sample);
 
@@ -11,5 +11,6 @@ public class Main {
 
         System.out.println(manager.listProducts());
         System.out.println(manager.getTotalProductPrice());
+
     }
 }
